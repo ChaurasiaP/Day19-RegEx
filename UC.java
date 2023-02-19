@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class UC {
 
-    static String VALID_EMAIL = "^([a-c]{3}([.|+|-]?[a-zA-Z0-9]+)?@bl.co([.]?[a-zA-Z]{2})?)$";
+    static String VALID_NUMBER = "^([0-9]{2}?[ ]{1} ?[1-9]{1}?[0-9]{9})$";
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Email: ");
-        String email = sc.nextLine();
 
-        if (email.matches(VALID_EMAIL)) {
-            System.out.println(email);
-        } else {
-            System.out.println("enter again");
+        System.out.println("Enter Mobile number: ");
+        String number = sc.nextLine();
+        if (number.matches(VALID_NUMBER)) {
+            System.out.println(number);
+        }else {
+            System.out.println("Enter Valid Number");
         }
     }
 }
