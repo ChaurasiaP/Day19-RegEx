@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class UC {
 
-    static String VALID_PASSWORD = "^([a-zA-Z]{8,})$";
+    static String VALID_PASSWORD = "^([a-zA-Z0-9]{8,})$";
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
