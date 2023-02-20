@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class UC {
 
-    static String VALID_EMAIL = "^([a-c]{3}([.|+|-]?[a-zA-Z0-9]+)?@bl.co([.]?[a-zA-Z]{2})?)$";
+    static String VALID_EMAIL = "^([a-zA-Z]{3,}([.|+|-]?[a-zA-Z0-9]+)?[@][a-zA-Z]+[.]+[a-zA-Z]{2,3}([.]?[a-zA-Z]{2})?)$";
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
